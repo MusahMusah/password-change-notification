@@ -40,7 +40,7 @@ class PasswordChangedNotificationMail extends Mailable
     public function content()
     {
         return new Content(
-            markdown: 'password-changed-notification::emails.password-changed-mail',
+            markdown: 'password-change-notification::emails.password-changed-mail',
             with: [
                 'user' => $this->user,
             ],

@@ -4,7 +4,6 @@ namespace MusahMusah\PasswordChangeNotification;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MusahMusah\PasswordChangeNotification\Commands\PasswordChangeNotificationCommand;
 
 class PasswordChangeNotificationServiceProvider extends PackageServiceProvider
 {
@@ -18,8 +17,6 @@ class PasswordChangeNotificationServiceProvider extends PackageServiceProvider
         $package
             ->name('password-change-notification')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_password-change-notification_table')
-            ->hasCommand(PasswordChangeNotificationCommand::class);
+            ->hasViews();
     }
 }
