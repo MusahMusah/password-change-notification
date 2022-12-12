@@ -18,7 +18,8 @@ class PasswordChangedNotificationMail extends Mailable
      * @return void
      */
     public function __construct(public $user)
-    {}
+    {
+    }
 
     /**
      * Get the message envelope.

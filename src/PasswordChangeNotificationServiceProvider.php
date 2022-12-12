@@ -2,9 +2,9 @@
 
 namespace MusahMusah\PasswordChangeNotification;
 
+use MusahMusah\PasswordChangeNotification\Commands\PasswordChangeNotificationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MusahMusah\PasswordChangeNotification\Commands\PasswordChangeNotificationCommand;
 
 class PasswordChangeNotificationServiceProvider extends PackageServiceProvider
 {

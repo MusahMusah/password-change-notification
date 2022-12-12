@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace MusahMusah\PasswordChangeNotification\Traits;
 
-use MusahMusah\PasswordChangeNotification\Mail\PasswordChangedNotificationMail;
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
+use MusahMusah\PasswordChangeNotification\Mail\PasswordChangedNotificationMail;
 
 trait ObservePasswordChangeMail
 {
@@ -49,7 +49,7 @@ trait ObservePasswordChangeMail
 
     public function sendPasswordChangedNotification(): void
     {
-        if (!$this->isPasswordChanged()) {
+        if (! $this->isPasswordChanged()) {
             return;
         }
 
