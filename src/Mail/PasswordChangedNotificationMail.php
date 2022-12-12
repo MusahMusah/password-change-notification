@@ -2,9 +2,7 @@
 
 namespace MusahMusah\PasswordChangeNotification\Mail;
 
-use App\Models\User;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -19,7 +17,7 @@ class PasswordChangedNotificationMail extends Mailable
      *
      * @return void
      */
-    public function __construct(public User $user)
+    public function __construct(public $user)
     {}
 
     /**
