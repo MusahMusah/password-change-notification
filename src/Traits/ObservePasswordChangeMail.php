@@ -44,7 +44,7 @@ trait ObservePasswordChangeMail
 
     public function shouldPasswordChangedNotificationMailBeQueued(): bool
     {
-        return false;
+        return config('password-change-notification.queue-notification-mail', false);
     }
 
     public function sendPasswordChangedNotification(): void
